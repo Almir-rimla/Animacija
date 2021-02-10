@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacija</title>
+    <style>
+   
+   body {
+        background:black;
+       
+        margin: 150px auto;
+    }
+    
+    #container {
+        background: #000000;
+        width:500px;
+        height: 399px;
+        margin: 1px auto;
+        position: relative;
+        
+    }
+    
+    #circle {
+        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+        position: absolute;
+        top: 20px;
+        left: 115px;
+        right: 110;
+        width: 270px;
+        height: 270px;
+        margin: 30px auto;
+       
+        border-radius: 100%;
+        transform: translate(0px, 50px);
+        filter: blur(1px) drop-shadow(0px 0px 42px rgb(134, 128, 127));
+        animation-name: circle-animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-style: preserve-3d;
+    }
+    
+    @keyframes circle-animation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    #circle::before {
+        position: absolute;
+        content: "";
+        background: black;
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+        margin: 25px;
+    }
+    
+    .puls {
+        background: #0d0d15;
+        position: relative;
+        content: '';
+        width: 215px;
+        height: 215px;
+        border-radius: 100%;
+        margin: 0 auto;
+        margin-top: -20px;
+        top: 20%;
+        filter: blur(2px) drop-shadow(0px 0px 10px #0d0d28);
+        animation-name: puls-animation;
+        animation-duration: 1.2s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes puls-animation {
+        0% {
+            background: #0f0f2b;
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+<div id="container">
+  <div id="circle"></div>
+  ::before
+  <div class="puls"></div>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
